@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/splash_frm_splashscreenimg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:contentDescription="empty"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/empname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/empview"
+        android:text="TextView"
+        android:textColor="#7FFF00"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/empview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/empname"
+        android:layout_alignBottom="@+id/empname"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+        android:text="View"
+        android:textColor="#7FFF00"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/empname"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="90dp"
+        android:text="TASKS" />
+
+    <TextView
+        android:id="@+id/task1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tasks"
+        android:layout_below="@+id/progress"
+        android:layout_marginTop="60dp"
+        android:text="Unit Testing"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/progress2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/task2"
+        android:layout_alignBottom="@+id/task2"
+        android:layout_alignLeft="@+id/progress1"
+        android:background="@drawable/whitebuttongradient"
+        android:ems="10"
+        android:maxLength="3"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="#ff666666" />
+
+    <Button
+        android:id="@+id/sendreport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/progress"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/orangebuttongradient"
+        android:padding="10dp"
+        android:text="Send Report"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progress1"
+        android:layout_toRightOf="@+id/progress"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tasks"
+        android:layout_alignBottom="@+id/tasks"
+        android:layout_centerHorizontal="true"
+        android:text="Progress"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/task2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/task1"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:text="Medium Text"
+        android:textColor="#FF0000" />
+
+    <EditText
+        android:id="@+id/progress1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/task1"
+        android:layout_toLeftOf="@+id/empview"
+        android:background="@drawable/whitebuttongradient"
+        android:ems="10"
+        android:maxLength="3"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="#ff666666"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/currentprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progress"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Current Progress" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/task2"
+        android:layout_toRightOf="@+id/progress"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
