@@ -25,7 +25,7 @@ public class StudentDetailsRequest {
 	
 	@JsonProperty("courseName")
 	@Valid
-	@NotNull(message="validatecourseName")
+	@NotNull(message="validateCourseName")
 	private String courseName;
 
 	public String getStudentName() {
